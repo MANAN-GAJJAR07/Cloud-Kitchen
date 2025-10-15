@@ -1,0 +1,175 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="CloudKitchen.Admin" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>CloudKitchen Admin</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .submenu {
+            display: none; /* Hidden by default */
+            flex-direction: column;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+
+            .submenu a {
+                font-size: 14px;
+                padding: 8px 20px;
+                color: #ced4da;
+                text-decoration: none;
+                display: block;
+            }
+
+                .submenu a:hover {
+                    background: #2b3035;
+                    color: #fff;
+                }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            height: 100vh;
+            background: #343a40;
+            color: #fff;
+            position: fixed;
+            width: 220px;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+        }
+
+            .sidebar h4 {
+                color: #fff;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .sidebar a {
+                color: #ddd;
+                display: block;
+                padding: 12px 20px;
+                text-decoration: none;
+            }
+
+                .sidebar a:hover {
+                    background: #495057;
+                    color: #fff;
+                }
+
+        .content-area {
+            margin-left: 220px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .navbar {
+            margin-left: 220px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            .content-area {
+                margin-left: 0;
+            }
+
+            .navbar {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <div class="sidebar">
+                <h4>Admin Panel</h4>
+                <a href="AdminBookTable.aspx"><i class="fa fa-calendar-check"></i>Reservations</a>
+                <a href="MenuManagement.aspx" onclick="toggleSubMenu(event)">
+                    <i class="fa fa-utensils"></i>Menu Management <i class="fa fa-angle-down" style="float: right;"></i>
+                </a>
+                <div class="submenu" id="menuSubMenu">
+                    <a href="AddFoodCategory.aspx"><i class="fa fa-list"></i>Add Food Category</a>
+                    <a href="AddFoodDishes.aspx"><i class="fa fa-hamburger"></i>Add Food Dishes</a>
+                </div>
+                <a href="User-Admin.aspx"><i class="fa fa-users"></i>User Management</a>
+                <a href="Logout.aspx"><i class="fa fa-sign-out-alt"></i>Logout</a>
+            </div>
+
+
+            <div class="content-area">
+                <nav class="navbar navbar-expand navbar-light bg-light">
+                    <span class="navbar-brand">CloudKitchen Admin</span>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <span class="nav-link"><i class="fa fa-user-shield"></i>Admin</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="main-content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <h2>Welcome to CloudKitchen Admin</h2>
+                        <p>Use the sidebar to manage Reservations and Menu.</p>
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <footer>
+                        <p>&copy; 2025 CloudKitchen Admin Panel</p>
+                    </footer>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("open");
+        }
+
+        function toggleSubMenu(event) {
+            event.preventDefault();
+            document.getElementById("menuSubMenu").style.display =
+                document.getElementById("menuSubMenu").style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
