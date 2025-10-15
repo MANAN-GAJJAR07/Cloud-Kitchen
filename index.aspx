@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <!--
-Victory HTML CSS Template
+Victory HTML CSS Template this is index page of cloud kitchen 
 https://templatemo.com/tm-507-victory
 -->
         <title>Victory HTML CSS Template</title>
