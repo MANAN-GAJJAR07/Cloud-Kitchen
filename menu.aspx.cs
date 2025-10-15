@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Configuration;
-using System.Data.SqlClient;
-using System.Data;
 
 namespace CloudKitchen
 {
@@ -24,7 +25,20 @@ namespace CloudKitchen
         int row = 3, p;
         protected void Page_Load(object sender, EventArgs e)
         {
-            getcon();
+            if (Session["user_email"].ToString() != "")
+            {
+                getcon();
+                da = new SqlDataAdapter("select * from Register_user where Email='" + Session["user_email"].ToString() + "'", con);
+                ds = new DataSet();
+                da.Fill(ds);
+                int uid = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
+                string s = ds.Tables[0].Rows[0][1].ToString();
+                Label4.Text = "Welcome " + s;
+            }
+            else
+            {
+                Response.Redirect("login.aspx");
+            }
             //fillcombo();
             filllist();
         }
