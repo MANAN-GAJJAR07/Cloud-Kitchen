@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BookTable.aspx.cs" Inherits="CloudKitchen.BookTable" %>
 
 <!DOCTYPE html>
+               <!-- this page have to user book table  -->
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
