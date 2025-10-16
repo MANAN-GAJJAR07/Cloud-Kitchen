@@ -24,8 +24,6 @@ namespace CloudKitchen
             getcon();
 
         }
-        // Rahul Kumar Mahanta
-        // Rk University
         void getcon()
         {
             con = new SqlConnection(s);

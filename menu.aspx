@@ -210,6 +210,7 @@
     <form id="form1" runat="server">
         <header>
             <h1>Victory</h1>
+            <asp:Label ID="Label4" runat="server" Text="Welcome"></asp:Label>
         </header>
 
         <nav>

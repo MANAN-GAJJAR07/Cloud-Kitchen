@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminBookTable.aspx.cs" Inherits="CloudKitchen.AdminBookTable" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style>
+   /* css*/
     /* Background Style - same as AddFoodDishes */
     body {
         background: linear-gradient(135deg, #b8c6db 0%, #f5f7fa 100%);

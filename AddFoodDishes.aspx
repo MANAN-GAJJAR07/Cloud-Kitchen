@@ -16,7 +16,8 @@
                 </td>
             </tr>
             <tr>
-                <td>Food Name:</td>
+
+                <td>Food name :</td>
                 <td>
                     <asp:TextBox ID="textfdnm" runat="server" CssClass="form-input"></asp:TextBox>
                 </td>
@@ -75,7 +76,7 @@
             font-family: inherit;
             font-size: 2.1rem;
             font-weight: 700;
-            color: #2260a8; /* Matching Add Food Category font color */
+            color: #2260a8;
             letter-spacing: .04em;
             display: block;
         }
@@ -91,7 +92,7 @@
         }
         .form-table td:first-child {
             font-weight: 700;
-            color: #2260a8; /* Matching Add Food Category label color */
+            color: #2260a8; 
             text-align: right;
             letter-spacing: .03em;
             width: 40%;
@@ -105,7 +106,7 @@
             border-radius: 11px;
             border: 2px solid #90caf9;
             background: rgba(245,245,255,0.65);
-            color: #19223b; /* Matching Add Food Category input text color */
+            color: #19223b; 
             font-size: 1rem;
             box-shadow: 0 2px 12px rgba(46,139,255,0.06);
             transition: border 0.26s, box-shadow 0.26s;
@@ -123,7 +124,7 @@
             border-radius: 11px;
             background: rgba(245,245,255,0.65);
             border: none;
-            color: #19223b; /* Ensure file upload text matches input text */
+            color: #19223b;
         }
         .btn-submit {
             background: linear-gradient(120deg, #473af4 0%, #50fded 99%);

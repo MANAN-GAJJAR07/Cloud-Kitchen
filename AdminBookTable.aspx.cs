@@ -33,7 +33,6 @@ namespace CloudKitchen
             da = new SqlDataAdapter("select * from book_tbl", con);
             ds = new DataSet();
             da.Fill(ds);
-
             GridView1.DataSource = ds;
             GridView1.DataBind();
         }
