@@ -65,7 +65,6 @@ namespace CloudKitchen
                 cmd = new SqlCommand("insert into add_dishes(F_category,F_name,F_config,F_price,Image) values('" + ViewState["cid"] + "' , '" + textfdnm.Text + "' ,  '" + txtpconfig.Text + "' ,'"+txtprc.Text+"', '" + fnm + "')", con);
                 cmd.ExecuteNonQuery();
                 clear();
-
                 Response.Redirect(Request.RawUrl);
             }
         }
@@ -73,7 +72,6 @@ namespace CloudKitchen
         {
             getcon();
             da = new SqlDataAdapter("select Id from add_ctgry where Name='" + DropDownList1.SelectedItem.Text + "'", con);
-
             ds = new DataSet();
             da.Fill(ds);
             ViewState["cid"] = ds.Tables[0].Rows[0][0].ToString();

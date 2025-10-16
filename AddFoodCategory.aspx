@@ -25,13 +25,11 @@
         </div>
     </div>
     <style>
-        /* Full background for glass effect */
         body {
             background: linear-gradient(135deg, #b8c6db 0%, #f5f7fa 100%);
             min-height: 100vh;
             margin: 0;
         }
-        /* Glassmorphism container */
         .table-container {
             max-width: 480px;
             margin: 40px auto;
@@ -47,7 +45,6 @@
             .table-container:hover {
                 box-shadow: 0 16px 48px rgba(20,55,90,0.28), 0 4px 24px rgba(140,180,255,0.22);
             }
-        /* Stylish table */
         .custom-table {
             width: 100%;
             border-spacing: 0;
@@ -66,7 +63,6 @@
             letter-spacing: .03em;
             width: 32%;
         }
-        /* Neon glass input */
         .input-text {
             width: 100%;
             padding: 11px 12px;
@@ -83,7 +79,6 @@
                 border-color: #1976d2;
                 box-shadow: 0 0 0 3px rgba(25,118,210,0.13);
             }
-        /* Gradient glass button */
         .btn-submit {
             background: linear-gradient(120deg, #473af4 0%, #50fded 99%);
             border: none;
@@ -103,7 +98,6 @@
                 transform: scale(1.08);
                 box-shadow: 0 6px 24px rgba(71,58,244,0.18);
             }
-        /* Center button row */
         .text-center {
             text-align: center;
         }
