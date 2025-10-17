@@ -4,7 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container mt-5">
-               <!-- this is Add food category page  page -->
+                       <%--In this page have to food add categropry --%>
+
 
         <h2 class="text-center mb-4">
             <i class="fa fa-list-alt"></i>Add Food Category
