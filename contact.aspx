@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Victory - Contact page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <%--Any querry have to contact me --%>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
