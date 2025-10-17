@@ -8,11 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-<<<<<<< HEAD
-       <!-- this is registration page -->
-
-=======
->>>>>>> 5b84dec3ea4998a558dccd9c9e65203d95bd0460
     <style>
         body {
             background: linear-gradient(#2C3E50,#E08D57,#2C3E50);

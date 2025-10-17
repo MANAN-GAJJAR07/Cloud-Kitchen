@@ -5,7 +5,6 @@
 <head runat="server">
     <title>CloudKitchen Menu</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-    <!--/.This is menu page website  -->
     <style>
 
         * {
@@ -98,7 +97,6 @@
             color: #fff;
         }
 
-        /* ----------- IMPROVED VERTICAL DATALIST STYLE ----------- */
         #DataList1 {
             display: flex;
             flex-direction: column;
@@ -188,7 +186,6 @@
                 text-align: center;
             }
         }
-        /* ------------------------------------------------------- */
 
         footer {
             background: #374152;
