@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="User-Admin.aspx.cs" Inherits="CloudKitchen.User_Admin" %>
+                  <!-- Admin page of website  -->
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style>
